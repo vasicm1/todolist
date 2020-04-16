@@ -5,52 +5,83 @@
  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
  <link rel="stylesheet" href="style.css" type="text/css" />
  <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet"> 
- </head>
+ <link href="https://fonts.googleapis.com/css?family=Heebo:300&display=swap" rel="stylesheet"> 
+ <script src="script.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</head>
  
  <body>
 
     <h1>todos</h1>
-    
     <div class="wrapper">
 
         <div class="todo">
+            <div class=todo__arrow></div>
             <input type="text" name="test" value="What needs to be done?">
         </div>
         <div>
             <ul class="todo__list">
                 <li>
-                    <div class="todo__checkbox">
-                        <input class="checkbox1" type="checkbox" id="C1"><label for="C1"></label>
-                    </div>
+                    <label class="todo__checkbox">
+                        <input class="todo__checkbox1" type="checkbox" id="c1">
+                        <span class="todo__checkbox-icon" onclick="rmButton()"></span>
+                    </label>
                     <div class="todo__listitem">Milch</div>
-                    <div class= todo__remove>x</div>
-                </li> <li>
-                        <div class="todo__checkbox">
-                            <input class="checkbox1" type="checkbox" id="C1"><label for="C1"></label>
-                        </div>
+                    <div class= todo__remove>
+                        <button id=delbtn1>X</button>
+                    </div>
+                </li> 
+                <li>
+                    <label class="todo__checkbox">
+                        <input class="todo__checkbox1" type="checkbox" id="C1">
+                        <span class="todo__checkbox-icon"></span>
+                    </label>
                         <div class="todo__listitem">Wasser</div>
-                        <div class= todo__remove>x</div>
+                        <div class= todo__remove>
+                            <button id=delbutton>X</button>
+                        </div>
                 </li>
                 <li>
-                        <div class="todo__checkbox">
-                            <input class="checkbox1" type="checkbox" id="C1"><label for="C1"></label>
-                        </div>
+                    <label class="todo__checkbox">
+                        <input class="todo__checkbox1" type="checkbox" id="C1">
+                        <span class="todo__checkbox-icon"></span>
+                    </label>
                         <div class="todo__listitem">Orangensaft</div>
-                        <div class= todo__remove>x</div>
+                        <div class= todo__remove>
+                            <button id=delbutton>X</button>
+                        </div>
                 </li>
                 <li>
-                        <div class="todo__checkbox">
-                            <input class="checkbox1" type="checkbox" id="C1"><label for="C1"></label>
-                        </div>
+                    <label class="todo__checkbox">
+                        <input class="todo__checkbox1" type="checkbox" id="C1">
+                        <span class="todo__checkbox-icon"></span>
+                    </label>
                         <div class="todo__listitem">Whatever</div>
-                        <div class= todo__remove>x</div>
+                        <div class= todo__remove>
+                            <button id=delbutton>X</button>
+                        </div>
                 </li>
             </ul>
         </div>
         <div class=todo__counter>
-            3 elements left
+             elements left
     </div>
-    
+
+    <script >
+
+        function mul(a, b){
+            
+            if (a > 10 || b > 10) {
+                return "thats too hard";
+            } else{
+                return a*b;
+            }
+       
+        }
+
+        mul(10, 20);
+
+    </script>
 
  </body>
  
